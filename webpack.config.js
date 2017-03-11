@@ -20,11 +20,11 @@ console.log(process.env.NODE_ENV, entry, output);
 
 module.exports = {
   entry,
-  output: {
+  output: Object.assign(output, {
     filename: 'bundle.js',
     library: 'react-sequence',
     libraryTarget: 'umd', // universal module definition
-  },
+  }),
   devtool: 'source-map',
   resolve: {
     extensions: ['.js', '.jsx'],
