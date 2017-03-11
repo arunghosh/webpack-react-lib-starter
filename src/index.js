@@ -1,2 +1,3 @@
-import Hello from './Hello.jsx';
+import Hello from './Hello';
+
 export default Hello;

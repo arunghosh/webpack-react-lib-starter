@@ -1,12 +1,10 @@
 const path = require('path');
 
-
-let
-  entry = './src/index.js',
-  output = {
-    path: path.join(__dirname, 'dist'),
-    publicPath: '/dist/',
-  };
+let entry = './src/index.js';
+let output = {
+  path: path.join(__dirname, 'dist'),
+  publicPath: '/dist/',
+};
 
 if (process.env.NODE_ENV === 'dev') {
   entry = './example/index.js';
@@ -15,8 +13,6 @@ if (process.env.NODE_ENV === 'dev') {
     publicPath: '/example/',
   };
 }
-
-console.log(process.env.NODE_ENV, entry, output);
 
 module.exports = {
   entry,
