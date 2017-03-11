@@ -1,2 +1,2 @@
-import Menu from './Menu.jsx';
-export default Menu;
+import Hello from './Hello.jsx';
+export default Hello;
