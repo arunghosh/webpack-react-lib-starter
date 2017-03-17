@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Hello from './src/Hello';
+import Hello from '../src/Hello';
 
 test('If no name parameter it should greet World', () => {
   const hello = shallow(<Hello />);
