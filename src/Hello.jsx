@@ -1,11 +1,17 @@
-import React, { Component } from 'react';
+import React, { PropTypes } from 'react';
 
-export default class Hello extends Component {
-  render() {
-    return (
-      <div>
-        Hello World!!!
-      </div>
-    );
-  }
-}
+const Hello = props => (
+  <div>
+    Hello {props.name}
+  </div>
+);
+
+Hello.propTypes = {
+  name: PropTypes.string,
+};
+
+Hello.defaultProps = {
+  name: 'World',
+};
+
+export default Hello;
